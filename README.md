@@ -4,8 +4,6 @@ Antes se llamaba **FenoSat** (versiones 0.1.0 a 0.4.0).
 
 Versión 0.4.1 (experimental). Herramienta para distinguir el maíz del sorgo y de otros cultivos en Tamaulipas, en dos pasos: 1) maíz + sorgo frente a otros; 2) maíz frente a sorgo (por separado o a la vez). Descarga Sentinel-2 L2A y Landsat 8/9 Collection 2 Level-2 recortados a una zona de estudio, los ordena por etapa según un calendario editable, calcula variables en ventanas relativas a la curva de NDVI de cada píxel (su propio arranque y su propio máximo, no fechas fijas), y ofrece exploración sin etiquetas, separabilidad con umbrales y Random Forest con validación por parcela. Ocho pestañas: Inicio, 1 · Calendario, 2 · Descarga, 3 · Variables, 4 · Grupos, 5 · Muestras, 6 · Clasificación, 7 · Mapas SIAP. Interfaz en español e inglés. QGIS 3.28 o superior. Sin dependencias obligatorias (GDAL y numpy, que ya trae QGIS; scikit-learn opcional).
 
-La base es el módulo de descarga de CitriSat 0.7.0 (misma lectura parcial de COG sin remuestrear, mismo manifiesto y misma forma de probar), generalizado a dos sensores y a una zona de estudio grande.
-
 ## Instalar
 
 QGIS → Complementos → Administrar e instalar → Instalar a partir de ZIP → `elotesat_v0.4.3.zip`. Sale en tres sitios: el menú **EloteSat** de la barra de menús (junto a Ayuda, con acceso directo a cada pestaña), su propia barra de herramientas (icono de la mazorca) y **Ráster → EloteSat Tamaulipas**.
