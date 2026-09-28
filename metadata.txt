@@ -1,0 +1,13 @@
+[general]
+name=EloteSat Tamaulipas
+qgisMinimumVersion=3.28
+description=Sentinel-2 and Landsat 8/9 by crop stage, NDVI-curve variables, separability and Random Forest to tell maize and sorghum from other crops and from each other.
+about=A tool to tell maize from sorghum and other crops in Tamaulipas. Searches Sentinel-2 L2A (Earth Search or Microsoft Planetary Computer) and Landsat 8/9 Collection 2 Level-2 (Planetary Computer, or Earth Search with the requester-pays USGS bucket) through STAC. Checks cover and cloud inside the study-area polygon with SCL / QA_PIXEL before downloading, reads only the window over the study area without resampling, and files each scene in a stage folder (cycle/stage/sensor) from an editable crop calendar. Then: variables in windows relative to each pixel's own NDVI curve (green-up, peak, post-peak, senescence) plus curve-shape metrics on a common grid, calendar profiles per municipality and water regime built from SIAP (Avance de Siembras y Cosechas) with an in-plugin updater, profile assignment from the study area, crop reference windows for interpretation, mapped vs SIAP sown area check, k-means groups without field data, Jeffries-Matusita separability and threshold rules, and hierarchical/flat Random Forest (scikit-learn if present, numpy otherwise) with field-grouped cross-validation. No mandatory extra Python dependencies.
+version=0.4.3
+author=Daniel Ibarra-Marinas
+email=daniel.ibarra@uat.edu.mx
+tags=sentinel-2,landsat,stac,phenology,maize,sorghum,crop classification,remote sensing,agriculture
+category=Raster
+experimental=True
+deprecated=False
+icon=icon.png

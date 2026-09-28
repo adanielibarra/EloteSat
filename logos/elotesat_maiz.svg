@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b2f5e"/>
+      <stop offset="1" stop-color="#0b1330"/>
+    </linearGradient>
+    <radialGradient id="earth" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#4fa3e0"/>
+      <stop offset="1" stop-color="#1d4f91"/>
+    </radialGradient>
+    <linearGradient id="cob" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f7c948"/>
+      <stop offset="0.55" stop-color="#ffdc5e"/>
+      <stop offset="1" stop-color="#e3a91e"/>
+    </linearGradient>
+    <linearGradient id="trail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffb347" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffcf5a" stop-opacity="0.9"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="256" height="256" rx="44"/></clipPath>
+    <clipPath id="cobclip"><ellipse cx="0" cy="0" rx="30" ry="68"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="256" height="256" fill="url(#bg)"/>
+    <!-- estrellas -->
+    <g fill="#fff">
+      <circle cx="30" cy="34" r="2.2"/><circle cx="74" cy="22" r="1.4"/>
+      <circle cx="210" cy="30" r="2.4"/><circle cx="232" cy="80" r="1.5"/>
+      <circle cx="186" cy="62" r="1.2"/><circle cx="46" cy="96" r="1.3"/>
+      <circle cx="226" cy="150" r="1.8"/><circle cx="150" cy="18" r="1.3"/>
+      <circle cx="20" cy="150" r="1.2"/><circle cx="238" cy="206" r="1.3"/>
+    </g>
+    <path d="M58 60 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z" fill="#fff" opacity="0.9"/>
+    <!-- Tierra -->
+    <circle cx="20" cy="262" r="92" fill="url(#earth)"/>
+    <path d="M-30 210 q30 -20 55 -8 q18 10 40 2 q14 -6 20 10 q-20 16 -50 12 q-30 -2 -65 10z" fill="#4caf50" opacity="0.9"/>
+    <path d="M40 250 q20 -12 40 -4 q10 6 26 2 l4 12 h-72z" fill="#4caf50" opacity="0.9"/>
+    <circle cx="20" cy="262" r="92" fill="none" stroke="#9fd3ff" stroke-width="3" opacity="0.5"/>
+
+    <!-- mazorca volando (girada) -->
+    <g transform="translate(140 118) rotate(40)">
+      <!-- estela -->
+      <path d="M-22 70 Q0 150 -6 190 L6 190 Q0 150 22 70 Z" fill="url(#trail)" transform="rotate(180 0 70) translate(0 -140)" opacity="0"/>
+      <path d="M-20 62 C-26 110 -10 150 0 176 C10 150 26 110 20 62 Z" fill="#ff9f1c" opacity="0.85"/>
+      <path d="M-11 64 C-14 100 -5 128 0 146 C5 128 14 100 11 64 Z" fill="#ffe066"/>
+      <!-- hojas (alas) -->
+      <path d="M-8 40 C-44 30 -62 -10 -56 -58 C-40 -20 -24 10 -4 22 Z" fill="#3fa34d"/>
+      <path d="M8 40 C44 30 62 -10 56 -58 C40 -20 24 10 4 22 Z" fill="#2e8b3e"/>
+      <!-- cuerpo -->
+      <ellipse cx="0" cy="0" rx="30" ry="68" fill="url(#cob)"/>
+      <g clip-path="url(#cobclip)" fill="none" stroke="#c98a12" stroke-width="1.6" opacity="0.75">
+        <path d="M-30 -60 H30 M-30 -48 H30 M-30 -36 H30 M-30 -24 H30 M-30 -12 H30 M-30 0 H30 M-30 12 H30 M-30 24 H30 M-30 36 H30 M-30 48 H30 M-30 60 H30"/>
+        <path d="M-20 -70 V70 M-10 -70 V70 M0 -70 V70 M10 -70 V70 M20 -70 V70"/>
+      </g>
+      <!-- base de hojas -->
+      <path d="M-26 44 C-18 70 18 70 26 44 C18 56 -18 56 -26 44 Z" fill="#2e8b3e"/>
+      <!-- cara -->
+      <g transform="rotate(-40)">
+        <ellipse cx="-11" cy="-10" rx="9" ry="11" fill="#fff" stroke="#1b1b1b" stroke-width="2"/>
+        <ellipse cx="13" cy="-8" rx="9" ry="11" fill="#fff" stroke="#1b1b1b" stroke-width="2"/>
+        <circle cx="-8" cy="-11" r="4.8" fill="#1b1b1b"/>
+        <circle cx="16" cy="-9" r="4.8" fill="#1b1b1b"/>
+        <circle cx="-6.5" cy="-13" r="1.6" fill="#fff"/>
+        <circle cx="17.5" cy="-11" r="1.6" fill="#fff"/>
+        <path d="M-10 10 Q2 24 16 11 Q3 16 -10 10 Z" fill="#7a1f1f" stroke="#1b1b1b" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M-4 15 Q3 19 9 15" fill="#ff7b7b"/>
+        <ellipse cx="-20" cy="5" rx="4" ry="2.5" fill="#ff8a65" opacity="0.6"/>
+        <ellipse cx="24" cy="8" rx="4" ry="2.5" fill="#ff8a65" opacity="0.6"/>
+      </g>
+    </g>
+    <!-- líneas de velocidad -->
+    <g stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.5">
+      <line x1="72" y1="132" x2="88" y2="113"/>
+      <line x1="84" y1="160" x2="96" y2="146"/>
+      <line x1="186" y1="178" x2="202" y2="159"/>
+      <line x1="206" y1="150" x2="216" y2="138"/>
+    </g>
+  </g>
+</svg>
