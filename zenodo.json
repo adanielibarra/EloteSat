@@ -1,0 +1,15 @@
+{
+  "title": "EloteSat Tamaulipas: QGIS plugin to map grain maize and sorghum from their phenology",
+  "upload_type": "software",
+  "description": "<p>QGIS plugin to map grain maize and sorghum in Tamaulipas (Mexico) from their phenology. It builds crop calendars per municipality and water regime from the SIAP <i>Avance de Siembras y Cosechas</i>, downloads Sentinel-2 L2A and Landsat 8/9 clipped to a study area, computes variables in windows relative to each pixel's own NDVI curve, explores groups without field data, measures separability and trains a Random Forest with field-grouped validation, compares mapped and SIAP sown areas, and produces municipal SIAP maps. Experimental. Formerly FenoSat (up to 0.4.0).</p>",
+  "creators": [
+    {
+      "name": "Ibarra-Marinas, Daniel",
+      "affiliation": "Universidad Autónoma de Tamaulipas",
+      "orcid": "0000-0003-3683-4456"
+    }
+  ],
+  "license": "GPL-3.0-or-later",
+  "keywords": ["QGIS", "remote sensing", "phenology", "maize", "sorghum", "crop classification", "Sentinel-2", "Landsat", "NDVI", "SIAP", "Tamaulipas", "Mexico"],
+  "language": "spa"
+}

@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Si usas este software, cítalo así."
+title: "EloteSat Tamaulipas: QGIS plugin to map grain maize and sorghum from their phenology"
+type: software
+authors:
+  - family-names: "Ibarra-Marinas"
+    given-names: "Daniel"
+    orcid: "https://orcid.org/0000-0003-3683-4456"
+    affiliation: "Universidad Autónoma de Tamaulipas"
+version: "0.4.3"
+date-released: "2026-09-28"
+license: GPL-3.0-or-later
+repository-code: "https://github.com/adanielibarra/EloteSat"
+keywords:
+  - QGIS
+  - remote sensing
+  - phenology
+  - maize
+  - sorghum
+  - Sentinel-2
+  - Landsat
+  - SIAP
+  - Tamaulipas
